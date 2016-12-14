@@ -1,6 +1,8 @@
 dependencies:
    override:
      - composer install --dev --no-interaction
+   pre:
+     - composer config -g github-oauth.github.com $GITHUB_ACCESS_TOKEN
 test:
    override:
      - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
