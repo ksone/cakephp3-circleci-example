@@ -7,4 +7,4 @@ test:
      - vendor/bin/phpunit --configuration phpunit.xml.dist --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml
 machine:
    php:
-     version:7.0.11
+     version: 7.0.11
